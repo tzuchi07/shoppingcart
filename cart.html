@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
 
   <style>
+ 
     body {
       margin: 0;
       width: 100%;
@@ -19,7 +20,7 @@
 
 
     .left-menu {
-      width: 279px;
+      width: 279px!important;
       background-color:white;
       /* overflow-y: hidden; */
     }
@@ -371,8 +372,8 @@
 
   <div class="container-fluid d-flex h-100 w-100 p-0 border-end position-relative">
     <!-- 縮小時彈出側欄 -->
-    <div class="left-menu appear l-height px-4  position-absolute top-0 ">
-      <div class="logo d-flex align-items-center"><svg width="160" height="31" viewBox="0 0 160 31" fill="none"
+    <div class="left-menu appear l-height pe-4  position-absolute top-0 shadow ">
+      <div class=" left-menu ps-4 logo d-flex align-items-center w-100"><svg width="160" height="31" viewBox="0 0 160 31" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
             d="M8.12346 24.8618C9.5969 24.8618 10.7914 23.6674 10.7914 22.194C10.7914 20.7205 9.5969 19.526 8.12346 19.526C6.65002 19.526 5.45557 20.7205 5.45557 22.194C5.45557 23.6674 6.65002 24.8618 8.12346 24.8618Z"
@@ -425,6 +426,7 @@
             d="M153.489 11.0062V13.9216H145.062V11.0062H153.489ZM146.975 7.65355H150.856V20.6998C150.856 21.0581 150.911 21.3375 151.02 21.538C151.129 21.7323 151.281 21.869 151.476 21.9479C151.676 22.0269 151.907 22.0664 152.168 22.0664C152.35 22.0664 152.532 22.0512 152.715 22.0208C152.897 21.9844 153.036 21.957 153.134 21.9388L153.744 24.8269C153.55 24.8876 153.276 24.9574 152.924 25.0364C152.572 25.1214 152.144 25.173 151.64 25.1913C150.704 25.2277 149.884 25.1032 149.18 24.8177C148.481 24.5323 147.938 24.0889 147.549 23.4876C147.16 22.8863 146.969 22.1271 146.975 21.21V7.65355Z"
             fill="#21313C" />
         </svg>
+        <i class="fa-solid fa-xmark fs-19-self"></i>
       </div>
       <div class="  left-menu l-menu-height  pt-1 d-xl-flex  overflow-y-scroll ">
         <div class="accordion accordion-flush text-black-50" id="accordionFlushExample">
@@ -584,8 +586,8 @@
     </div>
    
     <!-- 左邊欄位 -->
-    <div class="left-menu l-height px-4 d-none d-xl-block">
-      <div class="logo d-flex align-items-center"><svg width="160" height="31" viewBox="0 0 160 31" fill="none"
+    <div class="left-menu l-height pe-4 d-none d-xl-block ">
+      <div class=" left-menu ps-4 logo d-flex align-items-center"><svg width="160" height="31" viewBox="0 0 160 31" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
             d="M8.12346 24.8618C9.5969 24.8618 10.7914 23.6674 10.7914 22.194C10.7914 20.7205 9.5969 19.526 8.12346 19.526C6.65002 19.526 5.45557 20.7205 5.45557 22.194C5.45557 23.6674 6.65002 24.8618 8.12346 24.8618Z"
@@ -641,7 +643,7 @@
       </div>
       <div class="left-menu l-menu-height d-none pt-1 d-xl-flex  overflow-y-scroll ">
         <div class="accordion accordion-flush text-black-50" id="accordionFlushExample">
-          <h2 class="accordion-header ">
+          <h2 class="accordion-header px-0 ">
             <button class="accordion-button collapsed text-light-emphasis rounded-3 d-flex align-items-center  "
               type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
               aria-controls="flush-collapseOne">
@@ -867,7 +869,7 @@
 
           </div>
           <div class="col-12 offset-md-3 col-md-3  d-flex">
-            <button type="button" class="btn ms-md-4 btn-success  btn-success-self">Add New Category</button>
+            <button type="button" class="btn ms-md-4 btn-success  btn-success-self">AddzCategory</button>
           </div>
         </div>
         <!-- 主欄第二排 -->
