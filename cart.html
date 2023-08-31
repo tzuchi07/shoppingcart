@@ -345,7 +345,19 @@
       width:40px;
       height:40px;
     }
- 
+    
+    .login-block{
+      width: 192px;
+      height: 227px;
+      border-radius: 10px;
+      border: 1px solid darkgray;
+      background-color: white;
+      right:10px;
+    }
+    .login-block div:nth-of-type(2) div:hover{
+      background-color: rgb(240, 243, 242) ;
+    }
+
 
   </style>
 
@@ -820,7 +832,20 @@
         <!-- 導航欄右側  -->
         <div class="nav-right col-6 h-75 p-0  d-flex justify-content-end align-items-center ">
           <div class="alarm "><i class="fa-regular fa-bell fw-light"></i></div>
-          <div class="login ms-4"><img class="login" src="./photo/login.jpg"></div>
+          <div class="login ms-4 position-relative"><img class="login" src="./photo/login.jpg">
+            <!-- 彈出的登入登出方塊 -->
+            <div class="login-block position-absolute appear">
+              <div class=" p-3 border-bottom">
+                FreshCart Admin<br><span  class="text-black-50"> admindemo@email.com</span>
+               </div>
+              <div class=" px-3 py-2 border-bottom">
+                <div  class="text-black-50 rounded-2">Home</div>
+                <div  class="text-black-50 rounded-2">Profile</div>
+                <div  class="text-black-50 rounded-2">Settings</div>
+              </div>
+              <div class=" p-3 text-success">Log Out</div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -1088,15 +1113,19 @@
     <script>
       // 縮小時左邊侧欄出現
       {
-        let appear = document.querySelector('.appear');
+        let appear = document.querySelectorAll('.appear');
       let faIndent = document.querySelector('.fa-indent');
+      let login = document.querySelector('.login.ms-4.position-relative');
       console.log(appear);
 
       faIndent.addEventListener('click', () => {
-        appear.classList.toggle('d-block');
+        appear[0].classList.toggle('d-block');
+      })
+      
+      login.addEventListener('click', () => {
+        appear[1].classList.toggle('d-block');
       })
       }
-
       // 購物清單上點選第一行的checkbox後面的都會被勾選，或取消勾選
      {
       let inputAll = document.querySelector('.input-1');
